@@ -1,0 +1,165 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}  
+  /* Extra pequeño (teléfonos, menos de 576px) */
+@media (max-width: 575.98px) {
+    .card .card-text {
+        font-size: 0.9em;
+    }
+
+    .navbar-brand {
+        font-size: 1.5em;
+        padding: 3px 8px;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    footer h5, footer p, footer a {
+        font-size: 0.9em;
+    }
+}
+
+/* Pequeño (teléfonos grandes, entre 576px y 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card .card-text {
+        font-size: 1em;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* Mediano (tabletas, entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card .card-text {
+        font-size: 1em;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1em;
+    }
+}
+
+/* Grande (escritorios medianos, entre 992px y 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .carousel-item img {
+        height: 350px;
+    }
+}
+
+/* Extra grande (escritorios grandes, 1200px en adelante) */
+@media (min-width: 1200px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+  
+   
+   
+      
+@font-face {
+    font-family: 'Bangers';
+    src: url('fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ /* Estilos generales */
+ .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+#banner {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5em;
+    color: red;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    font-family: 'Bangers', cursive;
+    font-size: 2.8em; /* Aumentado */
+    color: red !important;
+    background: white;
+    padding: 8px 15px; /* También puedes aumentar el padding si se ve muy apretado */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.navbar-nav .nav-item {
+    margin-left: 25px; /* Puedes ajustar este valor */
+}
+
+
+/* Evitar que el color cambie al hacer hover */
+.navbar-brand:hover {
+color: red !important;
+background: white;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-reciente{
+    font-family: 'Bangers', cursive;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 380px; /* Ajusta la altura según lo que necesites */
+    
+   
+}
+
+
+
+
+/* Usa la fuente en el sitio */
