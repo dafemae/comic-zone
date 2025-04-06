@@ -3,17 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO básico -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMIC ZONE</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Acerca de - Comic Zone</title>
+    <meta name="description" content="Conoce más sobre Comic Zone, nuestra historia, misión y visión en el mundo de los cómics y la cultura pop.">
+    <meta name="keywords" content="acerca de, historia, misión, Comic Zone, cómics, cultura pop">
+    <meta name="author" content="Comic Zone">
+    <meta name="robots" content="index, follow">
 
-    <!-- Bootstrap 5 CSS -->
+    <!-- Open Graph (Facebook y otros) -->
+    <meta property="og:title" content="Acerca de - Comic Zone">
+    <meta property="og:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
+    <meta property="og:image" content="./imagenes/logo.png"> <!-- Usa tu imagen real -->
+    <meta property="og:url" content="./acerca.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Acerca de - Comic Zone">
+    <meta name="twitter:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
+    <meta name="twitter:image" content="./imagenes/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical (evita contenido duplicado) -->
+    <link rel="canonical" href="./acerca.html">
+
+    <!-- CSS -->
+
     <link href="./style/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fuente personalizada -->
-    <link href="./style/css2.css?family=Bangers&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style/style.css">
+    <link href="./style/css2.css?family=Bangers&display=swap" rel="stylesheet"> 
+
+
 </head>
+
 
 <body>
     <!-- Navbar responsivo de Bootstrap -->
@@ -25,18 +53,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto" >
                     <li class="nav-item">
-                        <a class="nav-link" href="./acerca.html">Acerca de</a>
+                        <a class="nav-link" href="./acerca.html">ACERCA DE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./figura.html">Figuras</a>
+                        <a class="nav-link" href="./figura.html">FIGURAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./peliculas.html">Peliculas</a>
+                        <a class="nav-link" href="./peliculas.html">PELICULAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./como-comprar.html">CÓMO COMPRAR</a>
                     </li>
                 </ul>
             </div>
@@ -73,20 +104,26 @@
 
     <!-- Sección Acerca de -->
     <section class="container mt-5">
-        <h2 class="text-center mb-4">Acerca de Comic Zone</h2>
-
-        <div class="row justify-content-center">
+        <h2 class="text-center mb-4 text-uppercase font-weight-bold title-reciente">Acerca de Comic Zone</h2>
+    
+        <div class="row justify-content-center align-items-center">
             <!-- Avatar -->
-            <div class="col-md-4 text-center">
-                <img src="imagenes/avatar.jpg" class="rounded-circle" alt="Avatar de Comic Zone" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="col-md-3 text-left mb-3 mb-md-0">
+                <img src="imagenes/avatar.jpg" class="rounded-circle shadow-lg" alt="Avatar de Comic Zone" style="width: 180px; height: 180px; object-fit: cover;">
             </div>
             <!-- Descripción -->
-            <div class="col-md-6">
-                <p class="lead text-center">Bienvenidos a <strong>Comic Zone</strong>, el lugar perfecto para los fanáticos de los cómics, figuras y películas de tus héroes y villanos favoritos. Aquí encontrarás una variedad de productos, noticias y contenido relacionado con el fascinante universo del cómic, con un enfoque especial en las figuras de colección y las adaptaciones cinematográficas.</p>
+            <div class="col-md-7" style="font-size: 1.2rem;">
+                <p class="text-center">Bienvenidos a <strong>Comic Zone</strong>, el lugar perfecto para los fanáticos de los cómics, figuras y películas de tus héroes y villanos favoritos. Aquí encontrarás una variedad de productos, noticias y contenido relacionado con el fascinante universo del cómic, con un enfoque especial en las figuras de colección y las adaptaciones cinematográficas.</p>
+                
                 <p class="text-center">Desde las historias clásicas hasta las películas más recientes, Comic Zone es el espacio donde podrás explorar, disfrutar y adquirir lo mejor de tus personajes favoritos, ¡tanto en formato digital como en físico!</p>
+                
+                <p class="mt-4">Somos un equipo joven y apasionado por los cómics, con más de 10 años de experiencia en la importación de productos exclusivos. Nos enorgullece ofrecer a nuestros clientes lo mejor de la cultura pop, asegurándonos de que cada producto llegue en condiciones óptimas y con la calidad que merecen los verdaderos fanáticos.</p>
+                
+                <p>En Comic Zone, creemos en el poder de las historias que nos unen y nos inspiran. Cada cómic, cada figura y cada película que ofrecemos es una puerta a un mundo lleno de imaginación y aventura. Estamos aquí para que puedas disfrutar de todo lo relacionado con tus personajes favoritos, con la confianza de que lo que adquieres está respaldado por nuestra dedicación y amor por lo que hacemos.</p>
             </div>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-4 mt-5">
@@ -105,7 +142,7 @@
                 </div>
 
                 <!-- Redes sociales -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h5>Síguenos</h5>
                     <a href="https://www.facebook.com/groups/655924074480233/?locale=es_LA" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
                     <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftiendacomica" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
@@ -114,7 +151,7 @@
                 </div>
 
                 <!-- Información y copyright -->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <h5>Contacto</h5>
                     <p>Email: contacto@comiczone.com</p>
                     <p>Teléfono: +123 456 789</p>

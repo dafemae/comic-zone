@@ -7,11 +7,12 @@
     
     <!-- SEO básico -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Comic Zone</title>
-    <meta name="description" content="Contáctanos para obtener más información sobre productos, pedidos y servicios de Comic Zone.">
-    <meta name="keywords" content="contacto, preguntas, servicio al cliente, Comic Zone, cómics, soporte">
+    <title>Cómo Comprar - Comic Zone</title>
+    <meta name="description" content="Aprende cómo realizar tus compras en Comic Zone, desde la selección de productos hasta el proceso de pago y envío.">
+    <meta name="keywords" content="cómo comprar, comprar en línea, guía de compras, proceso de compra, Comic Zone, pedidos en línea">
     <meta name="author" content="Comic Zone">
     <meta name="robots" content="index, follow">
+
   <!-- Open Graph (Facebook y otros) -->
   <meta property="og:title" content="Acerca de - Comic Zone">
   <meta property="og:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
@@ -29,10 +30,10 @@
     <link rel="icon" href="./imagenes/favicon.ico" type="image/x-icon">
 
     <!-- Canonical (evita contenido duplicado) -->
-    <link rel="canonical" href=./contacto.html">
+    <link rel="canonical" href="https://tusitio.com/como-comprar.html">
 
     <!-- CSS -->
-
+    <link rel="stylesheet" href="styles.css">
     <link href="./style/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <link href="./style/css2.css?family=Bangers&display=swap" rel="stylesheet"> 
@@ -51,7 +52,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" >
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="./acerca.html">ACERCA DE</a>
                     </li>
@@ -64,6 +65,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./contacto.html">CONTACTO</a>
                     </li>
+                    <!-- Nuevo ítem "Cómo Comprar" -->
                     <li class="nav-item">
                         <a class="nav-link" href="./como-comprar.html">CÓMO COMPRAR</a>
                     </li>
@@ -72,73 +74,52 @@
         </div>
     </nav>
 
-    <!-- Banner con carrusel -->
-    <section>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="imagenes/deadpool.jpg" alt="Deadpool en acción">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imagenes/spiderman.jpg" alt="Spiderman">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imagenes/MOVIES.jpg" alt="Marvel y DC">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imagenes/superman.jpg" alt="Superman">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <!-- Formulario de Contacto -->
+    <!-- Sección de Cómo Comprar -->
     <main class="container mt-5">
+        <h2 class="text-center title-reciente">¿CÓMO COMPRAR EN COMIC ZONE?</h2>
+        
+        <section class="mt-4">
+            <h3>Opciones de Pago</h3>
+            <p>En **Comic Zone** ofrecemos las siguientes opciones para que puedas realizar el pago de tu pedido:</p>
 
-        <div class="card">
-            <div class="card-header">
-                <h2 class="text-center title-reciente">Formulario de Contacto</h2>
+            <!-- Opción 1 -->
+            <div class="mb-4">
+                <h4>OPCIÓN 1 - PAGO CON TARJETA DE CRÉDITO Y DÉBITO A TRAVÉS DE WEBPAY</h4>
+                <p>Puedes pagar con el sistema de Webpay Plus de Transbank, el servicio de comercio electrónico más seguro y utilizado en Chile. Webpay Plus permite el pago con las principales tarjetas de crédito y débito del país, como Visa, MasterCard, Magna, American Express y Diners Club.</p>
             </div>
-            <div class="card-body">
-                <form action="#" method="POST">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
-                        </div>
-                    </div>
-        
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                    </div>
-        
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="aceptar" required>
-                        <label class="form-check-label" for="aceptar">Acepto los términos y condiciones</label>
-                    </div>
-        
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        </div>
-       
 
- 
+            <!-- Opción 2 -->
+            <div class="mb-4">
+                <h4>OPCIÓN 2 - DEPOSITO O TRANSFERENCIA BANCARIA</h4>
+                <p>Si prefieres pagar mediante transferencia bancaria o depósito, primero consulta la disponibilidad del producto. Una vez confirmado, realiza el pago en la siguiente cuenta corriente:</p>
+                <ul>
+                    <li><strong>Titular:</strong> Juan Perez</li>
+                    <li><strong>Rut:</strong> 14.560.860-0</li>
+                    <li><strong>Banco:</strong> BCI</li>
+                    <li><strong>N° de Cuenta:</strong> 82029814</li>
+                    <li><strong>Tipo de Cuenta:</strong> Cuenta Corriente</li>
+                    <li><strong>Email de confirmación:</strong> ventas@comiczone.com</li>
+                </ul>
+                <p>Envía el comprobante de depósito o transferencia junto con tus datos (nombre completo, teléfono y dirección) a nuestro correo electrónico: <strong>ventas@comiczone.com</strong></p>
+            </div>
+
+            <p>Si tienes alguna duda, no dudes en contactarnos al correo <strong>ventas@comiczone.com</strong>, estaremos encantados de ayudarte.</p>
+        </section>
+
+        <section class="mt-5">
+            <h3>Métodos de Despacho</h3>
+            <p>En **Comic Zone**, ofrecemos varias opciones para el despacho de tus productos. A continuación, te mostramos nuestros métodos de envío:</p>
+        
+            <ul>
+                <li><strong>Envío Estándar:</strong> Entrega dentro de 3 a 5 días hábiles. Ideal para pedidos no urgentes. Costo: $3.000 CLP.</li>
+                <li><strong>Envío Exprés:</strong> Entrega en 1 a 2 días hábiles. Para quienes necesitan recibir su pedido rápidamente. Costo: $5.000 CLP.</li>
+                <li><strong>Recogida en Tienda:</strong> Si prefieres recoger tu pedido en nuestra tienda, puedes hacerlo sin costo adicional. Solo selecciona la opción "Recoger en tienda" al finalizar la compra.</li>
+                <li><strong>Envío Internacional:</strong> Ofrecemos envío a diversos países. El costo y tiempo de entrega dependen del destino. Consulta con nuestro equipo para más información.</li>
+            </ul>
+        
+            <p>Si tienes alguna duda sobre el despacho, no dudes en contactarnos a través de nuestro correo <strong>ventas@comiczone.com</strong>.</p>
+        </section>
+        
     </main>
 
     <!-- Footer -->
@@ -155,7 +136,6 @@
                         <li><a href="./peliculas.html" class="text-light text-decoration-none">Películas</a></li>           
                         <li><a href="./contacto.html" class="text-light text-decoration-none">Contacto</a></li>
                     </ul>
-                    </ul>
                 </div>
 
                 <!-- Redes sociales -->
@@ -170,7 +150,7 @@
                 <!-- Información y contacto -->
                 <div class="col-md-5">
                     <h5>Contacto</h5>
-                    <p>Email: contacto@comiczone.com</p>
+                    <p>Email: ventas@comiczone.com</p>
                     <p>Teléfono: +123 456 789</p>
                     <p>Dirección: Calle Ficticia 123, Ciudad Marvel</p>
                 </div>
@@ -188,17 +168,6 @@
     <script src="./js/all.min.js"></script>
     <!-- Bootstrap 5 JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Función para mostrar el alert y evitar el envío del formulario
-        document.querySelector('form').addEventListener('submit', function(event) {
-            // Mostrar el mensaje de éxito
-            alert('Datos enviados correctamente');
-            this.reset();
-            
-            // Evitar que el formulario se envíe realmente (esto es útil si no estás enviando datos a un servidor)
-            event.preventDefault();
-        });
-    </script>
 </body>
 
 </html>

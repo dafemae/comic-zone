@@ -3,20 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO básico -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMIC ZONE</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Películas - Comic Zone</title>
+    <meta name="description" content="Descubre las mejores películas de superhéroes y cómics en Comic Zone. Todo el cine geek en un solo lugar.">
+    <meta name="keywords" content="películas, cómics, superhéroes, cine geek, Marvel, DC, Comic Zone">
+    <meta name="author" content="Comic Zone">
+    <meta name="robots" content="index, follow">
 
-    <!-- Bootstrap 5 CSS -->
+  <!-- Open Graph (Facebook y otros) -->
+  <meta property="og:title" content="Acerca de - Comic Zone">
+  <meta property="og:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
+  <meta property="og:image" content="./imagenes/logo.png"> <!-- Usa tu imagen real -->
+  <meta property="og:url" content="./acerca.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Acerca de - Comic Zone">
+  <meta name="twitter:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
+  <meta name="twitter:image" content="./imagenes/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" href="./imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical (evita contenido duplicado) -->
+    <link rel="canonical" href="./como-comprar.html">
+
+    <!-- CSS -->
+ 
     <link href="./style/bootstrap.min.css" rel="stylesheet">
-
-  
-
-    <!-- Fuente personalizada -->
-    <link href="./style/css2.css?family=Bangers&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style/style.css">
-</head>
+    <link href="./style/css2.css?family=Bangers&display=swap" rel="stylesheet"> 
 
+</head>
 <body>
     <!-- Navbar responsivo de Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,18 +49,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto" >
                     <li class="nav-item">
-                        <a class="nav-link" href="./acerca.html">Acerca de</a>
+                        <a class="nav-link" href="./acerca.html">ACERCA DE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./figura.html">Figuras</a>
+                        <a class="nav-link" href="./figura.html">FIGURAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./peliculas.html">Peliculas</a>
+                        <a class="nav-link" href="./peliculas.html">PELICULAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./como-comprar.html">CÓMO COMPRAR</a>
                     </li>
                 </ul>
             </div>
@@ -83,101 +108,127 @@
 
     <div class="row g-4"> <!-- Clase g-4 para espaciado entre columnas -->
 
-        <!-- Card 1 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/batman.jpg" class="card-img-top" alt="Batman Detective">
-                <div class="card-body">
-                    <h5 class="card-title">Batman Detective</h5>
-                    <p class="card-text">Superman. Batman. Wonder Woman. Aquaman. Flash. Cíborg. Green Lantern. Hawkgirl. El Detective Marciano..</p>
-                    <span class="badge bg-success">$50.00</span>
-                </div>
+<!-- Card 1 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0001" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/batman.jpg" alt="Batman Detective">
+            <div class="card-body">
+                <h5 class="card-title">Batman Detective</h5>
+                <p class="card-text">Superman. Batman. Wonder Woman. Aquaman. Flash. Cíborg. Green Lantern. Hawkgirl. El Detective Marciano..</p>
+                <span class="badge bg-danger precio">$30.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0001</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 2 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/liga_justicia.jpg" class="card-img-top" alt="Liga de la Justicia">
-                <div class="card-body">
-                    <h5 class="card-title">Liga de la Justicia</h5>
-                    <p class="card-text">Los héroes más poderosos del universo unen sus fuerzas para salvar al mundo.</p>
-                    <span class="badge bg-success">$55.00</span>
-                </div>
+<!-- Card 2 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0002" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/liga_justicia.jpg" alt="Liga de la Justicia">
+            <div class="card-body">
+                <h5 class="card-title">Liga de la Justicia</h5>
+                <p class="card-text">Los héroes más poderosos del universo unen sus fuerzas para salvar al mundo.</p>
+                <span class="badge bg-danger precio">$15.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0002</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 3 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/linterna_verde.jpg" class="card-img-top" alt="Linterna Verde">
-                <div class="card-body">
-                    <h5 class="card-title">Linterna Verde</h5>
-                    <p class="card-text">Hal Jordan, un piloto que se convierte en miembro de una fuerza intergaláctica de héroes.</p>
-                    <span class="badge bg-success">$60.00</span>
-                </div>
+<!-- Card 3 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0003" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/linterna_verde.jpg" alt="Linterna Verde">
+            <div class="card-body">
+                <h5 class="card-title">Linterna Verde</h5>
+                <p class="card-text">Hal Jordan, un piloto que se convierte en miembro de una fuerza intergaláctica de héroes.</p>
+                <span class="badge bg-danger precio">$20.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0003</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 4 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/mujer_maravilla.jpg" class="card-img-top" alt="Mujer Maravilla">
-                <div class="card-body">
-                    <h5 class="card-title">Mujer Maravilla</h5>
-                    <p class="card-text">Diana Prince lucha por la justicia y la igualdad como la heroína más poderosa del mundo.</p>
-                    <span class="badge bg-success">$65.00</span>
-                </div>
+<!-- Card 4 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0004" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/mujer_maravilla.jpg" alt="Mujer Maravilla">
+            <div class="card-body">
+                <h5 class="card-title">Mujer Maravilla</h5>
+                <p class="card-text">Diana Prince lucha por la justicia y la igualdad como la heroína más poderosa del mundo.</p>
+                <span class="badge bg-danger precio">$25.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0004</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 5 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/spaw.jpg" class="card-img-top" alt="Spawn">
-                <div class="card-body">
-                    <h5 class="card-title">Spawn</h5>
-                    <p class="card-text">Al Simmons, un ex-soldado de las fuerzas especiales, se convierte en Spawn, un antihéroe del inframundo.</p>
-                    <span class="badge bg-success">$70.00</span>
-                </div>
+<!-- Card 5 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0005" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/spaw.jpg" alt="Spawn">
+            <div class="card-body">
+                <h5 class="card-title">Spawn</h5>
+                <p class="card-text">Al Simmons, un ex-soldado de las fuerzas especiales, se convierte en Spawn, un antihéroe del inframundo.</p>
+                <span class="badge bg-danger precio">$15.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0005</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 6 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/spiderman.jpg" class="card-img-top" alt="Spider-Man">
-                <div class="card-body">
-                    <h5 class="card-title">Spider-Man</h5>
-                    <p class="card-text">Peter Parker lucha contra los villanos mientras enfrenta los desafíos de ser un joven héroe.</p>
-                    <span class="badge bg-success">$75.00</span>
-                </div>
+<!-- Card 6 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0006" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/spiderman.jpg" alt="Spider-Man">
+            <div class="card-body">
+                <h5 class="card-title">Spider-Man</h5>
+                <p class="card-text">Peter Parker lucha contra los villanos mientras enfrenta los desafíos de ser un joven héroe.</p>
+                <span class="badge bg-danger precio">$30.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0006</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 7 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/superman.jpg" class="card-img-top" alt="Superman">
-                <div class="card-body">
-                    <h5 class="card-title">Superman</h5>
-                    <p class="card-text">El hombre de acero defiende a la humanidad, enfrentándose a amenazas de todo el universo.</p>
-                    <span class="badge bg-success">$80.00</span>
-                </div>
+<!-- Card 7 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0007" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/superman.jpg" alt="Superman">
+            <div class="card-body">
+                <h5 class="card-title">Superman</h5>
+                <p class="card-text">El hombre de acero defiende a la humanidad, enfrentándose a amenazas de todo el universo.</p>
+                <span class="badge bg-danger precio">$20.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0007</span></p>
             </div>
         </div>
+    </a>
+</div>
 
-        <!-- Card 8 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="imagenes/peliculas/tortugas.jpg" class="card-img-top" alt="Las Tortugas Ninja">
-                <div class="card-body">
-                    <h5 class="card-title">Las Tortugas Ninja</h5>
-                    <p class="card-text">Leonardo, Donatello, Michelangelo y Raphael luchan contra el crimen en las alcantarillas de Nueva York.</p>
-                    <span class="badge bg-success">$60.00</span>
-                </div>
+<!-- Card 8 -->
+<div class="col-md-3">
+    <a href="detalle_pelicula.html?id=P0008" class="text-dark text-decoration-none">
+        <div class="card">
+            <img src="imagenes/peliculas/tortugas.jpg" alt="Las Tortugas Ninja">
+            <div class="card-body">
+                <h5 class="card-title">Las Tortugas Ninja</h5>
+                <p class="card-text">Leonardo, Donatello, Michelangelo y Raphael luchan contra el crimen en las alcantarillas de Nueva York.</p>
+                <span class="badge bg-danger precio">$30.000 <small class="text-light">CLP</small></span>
+                <p class="mt-2"><strong>Código del Producto:</strong> <span class="text-muted">P0008</span></p>
             </div>
         </div>
+    </a>
+</div>
+
+
 
     </div>
 </main>
@@ -203,7 +254,7 @@
             </div>
 
             <!-- Redes sociales -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h5>Síguenos</h5>
                 <a href="https://www.facebook.com/groups/655924074480233/?locale=es_LA" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftiendacomica" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
@@ -212,7 +263,7 @@
             </div>
 
             <!-- Información y copyright -->
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <h5>Contacto</h5>
                 <p>Email: contacto@comiczone.com</p>
                 <p>Teléfono: +123 456 789</p>

@@ -1,0 +1,148 @@
+<!-- detalle.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO básico -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de peliculas - Comic Zone</title>
+    <meta name="description" content="Descubre las mejores películas de superhéroes y cómics en Comic Zone. Todo el cine geek en un solo lugar.">
+    <meta name="keywords" content="películas, cómics, superhéroes, cine geek, Marvel, DC, Comic Zone">
+    <meta name="author" content="Comic Zone">
+    <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Facebook y otros) -->
+  <meta property="og:title" content="Acerca de - Comic Zone">
+  <meta property="og:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
+  <meta property="og:image" content="./imagenes/logo.png"> <!-- Usa tu imagen real -->
+  <meta property="og:url" content="./acerca.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Acerca de - Comic Zone">
+  <meta name="twitter:description" content="Descubre quiénes somos, nuestra historia y todo lo que hacemos en Comic Zone.">
+  <meta name="twitter:image" content="./imagenes/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" href="./imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical (evita contenido duplicado) -->
+    <link rel="canonical" href="./como-comprar.html">
+
+    <!-- CSS -->
+ 
+    <link href="./style/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="./style/css2.css?family=Bangers&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <!-- Navbar responsivo de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./">COMIC ZONE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acerca.html">ACERCA DE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./figura.html">FIGURAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./peliculas.html">PELICULAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./como-comprar.html">CÓMO COMPRAR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div class="container mt-5">
+    <div id="detalle-pelicula" ></div>
+    <a href="peliculas.html" class="btn btn-dark mt-3">Volver a películas</a>
+  </div>
+
+      
+    <!-- Footer -->
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Menú de navegación -->
+            <div class="col-md-4">
+                <h5>Menú</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a href="./acerca.html" class="text-light text-decoration-none">Acerca de</a></li>
+                    <li><a href="./figura.html" class="text-light text-decoration-none">Figuras</a></li>
+                    <li><a href="./peliculas.html" class="text-light text-decoration-none">Películas</a></li>           
+                    <li><a href="./contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+                </ul>
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="col-md-3">
+                <h5>Síguenos</h5>
+                <a href="https://www.facebook.com/groups/655924074480233/?locale=es_LA" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftiendacomica" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.instagram.com/paninicomicschile/?hl=es-la" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/@TheTopComicsOficial" class="text-light"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+
+            <!-- Información y copyright -->
+            <div class="col-md-5">
+                <h5>Contacto</h5>
+                <p>Email: contacto@comiczone.com</p>
+                <p>Teléfono: +123 456 789</p>
+                <p>Dirección: Calle Ficticia 123, Ciudad Marvel</p>
+            </div>
+        </div>
+
+        <!-- Línea de separación -->
+        <hr class="bg-light">
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Comic Zone. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+  <script src="./js/peliculas.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const pelicula = peliculas.find(p => p.id === id);
+
+    if (pelicula) {
+      document.getElementById("detalle-pelicula").innerHTML = `
+        <h1 class="title-reciente">${pelicula.titulo}</h1>
+        <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="img-fluid mb-3">
+        <p><strong>Descripción:</strong> ${pelicula.descripcion}</p>
+        <p><strong>Precio:</strong> ${pelicula.precio}</p>
+        <p><strong>Código del Producto:</strong> ${pelicula.id}</p>
+      `;
+    } else {
+      document.getElementById("detalle-pelicula").innerHTML = "<p>Película no encontrada.</p>";
+    }
+  </script>
+
+ 
+</body>
+</html>

@@ -160,6 +160,58 @@ background: white;
 }
 
 
+.precio {
+    font-size: 1rem;  /* Aumenta el tamaño del texto */
+    font-weight: bold;  /* Hace el texto en negrita */
+    color: #fff;  /* Asegura que el precio sea blanco */
+    padding: 5px;  /* Agrega un poco de espacio alrededor del precio */
+    border-radius: 5px;  /* Opcional: bordes redondeados para los precios */
+}
+
+
+          /* Estilo básico del popup */
+          .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup-content {
+            width: 80%;  /* Establece un ancho fijo o porcentaje del ancho de la ventana */
+            height: auto;  /* Ajusta la altura proporcionalmente */
+            max-width: 600px;  /* Opcional: límite máximo de tamaño */
+            object-fit: contain;  /* Mantiene la relación de aspecto de la imagen */
+        }
+        
+        
+        /* Estilo para el botón de cerrar */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #f1f1f1;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .card-img-top{
+            cursor: pointer;
+        }
 
 
 /* Usa la fuente en el sitio */
